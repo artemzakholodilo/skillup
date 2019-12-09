@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>Add product</title>
+    </head>
+    <body>
+        <form action="http://localhost:8000" method="POST">
+        	<h2>Добавление продукта</h2>
+        	<label for="name">Product name</label>
+        	<input type="text" id="name" name="name" placeholder="Product name" required="required" />
+        	<input type="hidden" name="csrf" value="csrf" />
+        	<label>Category
+        	<select name="category[]" multiple="multiple">
+                <option value="1">Cat1</option>
+                <option value="2">Cat2</option>
+                <option value="3">Cat3</option>
+                <option value="4">Cat4</option>
+        	</select>
+        </label>
+        	<input type="email" name="producer" value="azaholodilo@gmail.com" autofocus="autofocus" />
+        	<input type="number" name="quantity" />
+        	<input type="phone" name="address" minlength="2" maxlength="4" />
+        	<input type="password" name="password" />
+        	<input type="checkbox" name="check" value="enabled" />
+        	<div>
+        		<!-- <label>Gender
+        	<input type="radio" name="gender" value="male" />
+        	<input type="radio" name="gender" value="female" />
+        	<input type="radio" name="gender" value="other" />
+        </label> -->
+        	<textarea name="description" cols="20" rows="40"></textarea>
+        </div>
+        
+            <div>
+            <input type="submit" value="Save" />
+        </div>
+        </form>
+    </body>
+    </html>
