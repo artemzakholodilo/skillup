@@ -1,0 +1,52 @@
+/*
+вот здесь у нас главные стил
+*/
+
+@import url("holiday.css") screen;
+
+.main-content {
+	display: inline-block;
+	list-style: none;
+	position: relative;
+	left: 20%;
+}
+
+nav#navigation, li.first {
+	background-color: blue;
+}
+
+div.wrap > nav#nav > span[data-id="navigation"] {
+	color: #f0f0f0;
+	font-size: 5em;
+}
+
+nav#nav {
+	position: relative;
+	width: 10%;
+	max-height: 70%;
+	top: 5%;
+}
+
+.first {
+	font-size: 18px;
+}
+
+p.danger {
+	color: red;
+}
+
+p.danger {
+	font-family: Arial;
+}
+
+p.danger {
+
+}
+
+/*
+Content
+*/
+
+/*
+End content
+*/
